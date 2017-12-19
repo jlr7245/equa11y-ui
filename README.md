@@ -1,4 +1,4 @@
-# equa11y-ui: a modern, accessibility-first ui library
+# equa11y-ui: a modern, accessibility-first React component library
 
 * `yarn`: install dev dependencies
 * `yarn run storybook`: development
