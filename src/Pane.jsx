@@ -7,7 +7,7 @@ const Pane = ({ title, isMaximized, maximize, children, index }) => (
       {title}
     </button>
     {isMaximized ? (
-      <div>{React.Children.map(children, child => child)}</div>
+      <div>{children}</div>
     ) : null}
   </div>
 );
