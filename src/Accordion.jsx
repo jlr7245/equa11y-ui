@@ -45,6 +45,10 @@ class Accordion extends Component {
 
 Accordion.propTypes = {
   isMultiPane: PropTypes.bool.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]),
 };
 
 export { Accordion };

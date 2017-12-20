@@ -14,7 +14,10 @@ Pane.propTypes = {
   title: PropTypes.string.isRequired,
   isMaximized: PropTypes.bool,
   maximize: PropTypes.func,
-  children: PropTypes.arrayOf(PropTypes.node),
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]),
   index: PropTypes.number,
 };
 
