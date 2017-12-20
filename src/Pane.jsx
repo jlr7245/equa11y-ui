@@ -1,11 +1,13 @@
-import React from 'react';
+import React from "react";
 
 const Pane = ({ title, isMaximized, setMaximized, children, index }) => (
   <div>
-    <button onClick={() => setMaximized(index)} tabIndex="0">{title}</button>
-    {isMaximized 
-      ? <div>{React.Children.map(children, child => child)}</div>
-      : null}
+    <button onClick={() => setMaximized(index)} tabIndex="0">
+      {title}
+    </button>
+    {isMaximized ? (
+      <div>{React.Children.map(children, child => child)}</div>
+    ) : null}
   </div>
 );
 
