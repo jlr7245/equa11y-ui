@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
 class Accordion extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      currentlyMaximized: null,
+      currentlyMaximized: props.isMultiPane ? [] : null,
     };
   }
 
@@ -15,15 +15,28 @@ class Accordion extends Component {
     this.setState({ currentlyMaximized: index });
   };
 
+  addToMaximized = index => {
+    const { currentlyMaximized } = this.state;
+    const newArr = currentlyMaximized.includes(index)
+      ? currentlyMaximized.filter(elem => elem !== index)
+      : currentlyMaximized.concat(index);
+    this.setState({ currentlyMaximized: newArr });
+  };
+
   render() {
     const { isMultiPane, children } = this.props;
+    const { currentlyMaximized } = this.state;
     return (
       <div>
         {React.Children.map(children, (child, index) => {
           return React.cloneElement(child, {
-            isMaximized: index === this.state.currentlyMaximized,
-            setMaximized: this.setMaximized,
-            index: index,
+            isMaximized: isMultiPane
+              ? currentlyMaximized.includes(index)
+              : index === currentlyMaximized,
+            maximize: isMultiPane
+              ? this.addToMaximized
+              : this.setMaximized,
+            index,
           });
         })}
       </div>
