@@ -6,7 +6,7 @@ import { Pane } from "../src/Pane";
 export const singlePane = (
   <Accordion isMultiPane={false}>
     <Pane title="Pane 1">
-      <h1>Here is my first accordion pane</h1>
+      <h2>First Pane</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ante
         metus, dignissim eu sapien vitae, finibus tristique arcu. Quisque
@@ -40,7 +40,7 @@ export const singlePane = (
 export const multiPane = (
   <Accordion isMultiPane={true}>
     <Pane title="Pane 1">
-      <h1>Here is my first accordion pane</h1>
+      <h2>First Pane</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ante
         metus, dignissim eu sapien vitae, finibus tristique arcu. Quisque
