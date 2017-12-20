@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types';
 
 class Dropdown extends Component {
   constructor() {
@@ -38,5 +39,12 @@ class Dropdown extends Component {
     );
   }
 }
+
+Dropdown.propTypes = {
+  title: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  isHoverable: PropTypes.bool.isRequired,
+  children: PropTypes.arrayOf(PropTypes.node),
+};
 
 export { Dropdown };
