@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types';
 
 class Accordion extends Component {
   constructor(props) {
@@ -43,5 +44,9 @@ class Accordion extends Component {
     );
   }
 }
+
+Accordion.propTypes = {
+  isMultiPane: PropTypes.bool.isRequired,
+};
 
 export { Accordion };
