@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 class Accordion extends Component {
   constructor(props) {
@@ -34,9 +34,7 @@ class Accordion extends Component {
             isMaximized: isMultiPane
               ? currentlyMaximized.includes(index)
               : index === currentlyMaximized,
-            maximize: isMultiPane
-              ? this.addToMaximized
-              : this.setMaximized,
+            maximize: isMultiPane ? this.addToMaximized : this.setMaximized,
             index,
           });
         })}

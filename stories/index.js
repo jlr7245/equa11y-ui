@@ -7,8 +7,8 @@ import { Button } from "../src/Button";
 import { Dropdown } from "../src/Dropdown";
 import { Dropitem } from "../src/Dropitem";
 
-import { Accordion } from '../src/Accordion';
-import { Pane } from '../src/Pane';
+import { Accordion } from "../src/Accordion";
+import { Pane } from "../src/Pane";
 
 storiesOf("Button", module).add("with title", () => (
   <Button title={"hello"} onClick={action("clicked")} />
@@ -31,16 +31,32 @@ storiesOf("Accordion", module).add("Single expanded", () => (
   <Accordion isMultiPane={false}>
     <Pane title="Pane 1">
       <h1>Here is my first accordion pane</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ante metus, dignissim eu sapien vitae, finibus tristique arcu. Quisque sollicitudin velit a purus venenatis venenatis.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ante metus, dignissim eu sapien vitae, finibus tristique arcu. Quisque sollicitudin velit a purus venenatis venenatis.</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ante
+        metus, dignissim eu sapien vitae, finibus tristique arcu. Quisque
+        sollicitudin velit a purus venenatis venenatis.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ante
+        metus, dignissim eu sapien vitae, finibus tristique arcu. Quisque
+        sollicitudin velit a purus venenatis venenatis.
+      </p>
     </Pane>
     <Pane title="Pane 2">
       <h2>Second Pane</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ante metus, dignissim eu sapien vitae, finibus tristique arcu. Quisque sollicitudin velit a purus venenatis venenatis.</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ante
+        metus, dignissim eu sapien vitae, finibus tristique arcu. Quisque
+        sollicitudin velit a purus venenatis venenatis.
+      </p>
     </Pane>
     <Pane title="Pane 3">
       <h2>Third Pane</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ante metus, dignissim eu sapien vitae, finibus tristique arcu. Quisque sollicitudin velit a purus venenatis venenatis.</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ante
+        metus, dignissim eu sapien vitae, finibus tristique arcu. Quisque
+        sollicitudin velit a purus venenatis venenatis.
+      </p>
     </Pane>
   </Accordion>
 ));
@@ -48,16 +64,32 @@ storiesOf("Accordion", module).add("Multi expanded", () => (
   <Accordion isMultiPane={true}>
     <Pane title="Pane 1">
       <h1>Here is my first accordion pane</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ante metus, dignissim eu sapien vitae, finibus tristique arcu. Quisque sollicitudin velit a purus venenatis venenatis.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ante metus, dignissim eu sapien vitae, finibus tristique arcu. Quisque sollicitudin velit a purus venenatis venenatis.</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ante
+        metus, dignissim eu sapien vitae, finibus tristique arcu. Quisque
+        sollicitudin velit a purus venenatis venenatis.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ante
+        metus, dignissim eu sapien vitae, finibus tristique arcu. Quisque
+        sollicitudin velit a purus venenatis venenatis.
+      </p>
     </Pane>
     <Pane title="Pane 2">
       <h2>Second Pane</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ante metus, dignissim eu sapien vitae, finibus tristique arcu. Quisque sollicitudin velit a purus venenatis venenatis.</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ante
+        metus, dignissim eu sapien vitae, finibus tristique arcu. Quisque
+        sollicitudin velit a purus venenatis venenatis.
+      </p>
     </Pane>
     <Pane title="Pane 3">
       <h2>Third Pane</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ante metus, dignissim eu sapien vitae, finibus tristique arcu. Quisque sollicitudin velit a purus venenatis venenatis.</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ante
+        metus, dignissim eu sapien vitae, finibus tristique arcu. Quisque
+        sollicitudin velit a purus venenatis venenatis.
+      </p>
     </Pane>
   </Accordion>
 ));

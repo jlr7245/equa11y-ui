@@ -6,9 +6,7 @@ const Pane = ({ title, isMaximized, maximize, children, index }) => (
     <button onClick={() => maximize(index)} tabIndex="0">
       {title}
     </button>
-    {isMaximized ? (
-      <div>{children}</div>
-    ) : null}
+    {isMaximized ? <div>{children}</div> : null}
   </div>
 );
 
