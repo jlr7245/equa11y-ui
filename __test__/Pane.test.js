@@ -44,6 +44,10 @@ describe("minimized pane", () => {
     anotherPane.find("button").simulate("click");
     expect(max2.mock.calls[0][0]).toBe(3);
   });
+  it("has the appropriate class", () => {
+    expect(wrapper.find(".eui__acc-pane")).toHaveLength(1);
+    expect(wrapper.find(".eui__max")).toHaveLength(0);
+  });
 });
 
 describe("maximized pane", () => {
@@ -66,5 +70,9 @@ describe("maximized pane", () => {
   });
   it("shows the content", () => {
     expect(wrapper.find("h2")).toHaveLength(1);
+  });
+  it("has the appropriate class", () => {
+    expect(wrapper.find(".eui__acc-pane")).toHaveLength(1);
+    expect(wrapper.find(".eui__max")).toHaveLength(1);
   });
 });

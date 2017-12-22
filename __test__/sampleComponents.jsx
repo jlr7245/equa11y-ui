@@ -4,7 +4,7 @@ import { Accordion } from "../src/Accordion";
 import { Pane } from "../src/Pane";
 
 export const singlePane = (
-  <Accordion isMultiPane={false}>
+  <Accordion id="singlepane-acc" isMultiPane={false}>
     <Pane title="Pane 1">
       <h2>First Pane</h2>
       <p>
@@ -38,7 +38,7 @@ export const singlePane = (
 );
 
 export const multiPane = (
-  <Accordion isMultiPane={true}>
+  <Accordion id="multipane-acc" isMultiPane={true}>
     <Pane title="Pane 1">
       <h2>First Pane</h2>
       <p>
