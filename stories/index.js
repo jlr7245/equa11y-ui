@@ -28,7 +28,7 @@ storiesOf("Dropdown", module).add("not isHoverable", () => (
   </Dropdown>
 ));
 storiesOf("Accordion", module).add("Single expanded", () => (
-  <Accordion isMultiPane={false}>
+  <Accordion id="singlepane-accordion" isMultiPane={false}>
     <Pane title="Pane 1">
       <h1>Here is my first accordion pane</h1>
       <p>
@@ -61,7 +61,7 @@ storiesOf("Accordion", module).add("Single expanded", () => (
   </Accordion>
 ));
 storiesOf("Accordion", module).add("Multi expanded", () => (
-  <Accordion isMultiPane={true}>
+  <Accordion id="multipane-accordion" isMultiPane={true}>
     <Pane title="Pane 1">
       <h1>Here is my first accordion pane</h1>
       <p>
