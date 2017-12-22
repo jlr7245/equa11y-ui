@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Pane = ({ title, isMaximized, maximize, children, index }) => (
-  <div>
+  <div className={isMaximized ? "eui__acc-pane eui__max" : "eui__acc-pane"}>
     <button onClick={() => maximize(index)} tabIndex="0">
       {title}
     </button>

@@ -25,10 +25,13 @@ class Accordion extends Component {
   };
 
   render() {
-    const { isMultiPane, children } = this.props;
+    const { isMultiPane, children, id } = this.props;
     const { currentlyMaximized } = this.state;
     return (
-      <div>
+      <div
+        id={id}
+        className={isMultiPane ? "eui__multipane-acc" : "eui__singlepane-acc"}
+      >
         {React.Children.map(children, (child, index) => {
           return React.cloneElement(child, {
             isMaximized: isMultiPane
@@ -49,6 +52,7 @@ Accordion.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]),
+  id: PropTypes.string,
 };
 
 export { Accordion };
